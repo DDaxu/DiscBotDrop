@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DDaxu/DiscBotDrop/issues"
   },
-  "homepage": "https://github.com/DDaxu/DiscBotDrop#readme"
+  "homepage": "https://github.com/DDaxu/DiscBotDrop#readme",
+  "dependencies": {
+    "discord.js": "^14.14.1"
+  }
 }
