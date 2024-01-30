@@ -1,4 +1,5 @@
-const {Client, IntentsBitField} = require('./discord.js');
+const {Client, IntentsBitField} = require('discord.js');
+require('dotenv').config();
 const token = process.env.TOKEN;
 const client = new Client({
     intents: [
@@ -12,4 +13,5 @@ const client = new Client({
 client.on('ready', (c) => {
     console.log('bot is ready');
 });
+console.log(token);
 client.login(token);
