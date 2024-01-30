@@ -1,4 +1,5 @@
-const {Client, IntentsBitField} = require('discord.js');
+const {Client, IntentsBitField} = require('./discord.js');
+const token = process.env.TOKEN;
 const client = new Client({
     intents: [
         IntentsBitField.Flags.Guilds,
@@ -8,3 +9,7 @@ const client = new Client({
     ]
 });
 //main code here 
+client.on('ready', (c) => {
+    console.log('bot is ready');
+});
+client.login(token);
